@@ -1,6 +1,7 @@
 # HubSpot COS Modal Site Search
 The missing HubSpot COS Site Search Module, inspired by HubSpot.com's search functionality.
 
+
 [Live Demo](https://www.growwithsms.com/)
 
 ## Features
@@ -18,3 +19,8 @@ The missing HubSpot COS Site Search Module, inspired by HubSpot.com's search fun
 * jQuery 1.7+
 * HubSpot COS website
 * List.js (packaged in the js file)
+
+## Credit 
+This is a fork from the original implementation by Grow with SMS:
+https://github.com/growwithsms/HubSpot-COS-Site-Search
+
