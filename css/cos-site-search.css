@@ -8,7 +8,7 @@ Forked from the version by Stefen Phelps - https://stefenphelps.com/
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0s 0.5s;
@@ -67,7 +67,7 @@ Forked from the version by Stefen Phelps - https://stefenphelps.com/
 
 .search-results-wrapper .search {
     width: 100%;
-    padding: 0.5em;
+    padding: 0.5em 0;
     background: none;
     border: 0 none;
     border-bottom: 2px solid #fff !important;
@@ -96,6 +96,19 @@ Forked from the version by Stefen Phelps - https://stefenphelps.com/
     padding: 1em;
     background: #fff;
     line-height: 1;
+}
+
+.search-results li:hover {
+    background: #fcfcfc;
+}
+
+.search-results li a {
+    display: inline-block;
+    width: 100%;
+}
+
+.search-results li span.cos-url {
+    color: #777;
 }
 
 .search-results li#no-items-found {

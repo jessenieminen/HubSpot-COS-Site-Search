@@ -28,7 +28,7 @@ $('a[href$="#cos-search"]').on('click', function(e){
             var url = $(this).find('loc').text(),
                 urlPath = /[^/]*$/.exec(url)[0],
                 name = urlPath.replace(/[-_]+/g, ' ').replace(/([\.,;])/g, '$1 ').toProperCase(),
-    			html = '<li><a class="cos-name" href="' + url + '">' + name + '</a><span class="cos-url">' + url + '</span></li>';
+    			html = '<li><a class="cos-name" href="' + url + '">' + name + '<span class="cos-url">' + url + '</span></a></li>';
             // output to DOM
             $('#hubspot-cos-site-search ul').append(html);
         });
