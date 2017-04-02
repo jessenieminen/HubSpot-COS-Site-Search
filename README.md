@@ -19,6 +19,7 @@ The missing HubSpot COS Site Search Module, inspired by HubSpot.com's search fun
 * jQuery 1.7+
 * HubSpot COS website
 * List.js (packaged in the js file)
+* Material Icons
 
 ## Credit 
 This is a fork from the original implementation by Grow with SMS:
