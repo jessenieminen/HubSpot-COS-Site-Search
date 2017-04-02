@@ -1,5 +1,6 @@
 /*! HubSpot COS Site Search
-Created by Stefen Phelps - https://stefenphelps.com/
+Created by Jesse Nieminen (https://www.viima.com)
+Forked from the version by Stefen Phelps - https://stefenphelps.com/
 ---------------------------------------------- */
 .search-results-overlay {
     position: fixed;
@@ -7,7 +8,7 @@ Created by Stefen Phelps - https://stefenphelps.com/
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0s 0.5s;
@@ -22,16 +23,23 @@ Created by Stefen Phelps - https://stefenphelps.com/
 
 .search-results-overlay .overlay-close {
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 2rem;
+    top: 5rem;
     overflow: hidden;
     border: 0;
-    color: #fff;
     z-index: 100;
     background: none;
-    font-size: 2em;
-    text-transform: uppercase;
     cursor: pointer;
+}
+.search-results-overlay .overlay-close i {
+    font-size: 42px;
+    color: white;
+}
+
+.search-results-overlay .overlay-close i:hover {
+    background: white;
+    border-radius: 50%;
+    color: #777;
 }
 
 .search-results-wrapper .search::-webkit-input-placeholder {
@@ -51,9 +59,9 @@ Created by Stefen Phelps - https://stefenphelps.com/
 }
 
 .search-results-wrapper {
-    max-width: 800px;
+    max-width: 850px;
     margin: 3em auto 1em auto;
-    padding: 0 3em;
+    padding: 0 8em;
     height: calc(100vh - 4em);
 }
 
@@ -83,11 +91,23 @@ Created by Stefen Phelps - https://stefenphelps.com/
 
 .search-results li {
     list-style: none;
-    margin-bottom: 1em;
-    font-size: 2em;
+    border-bottom: 2px solid #EEE;
+    font-size: 1.6em;
     padding: 1em;
     background: #fff;
     line-height: 1;
+}
+
+.search-results li#no-items-found {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.search-results li#no-items-found i {
+    font-size: 42px;
+}
+.search-results li#no-items-found span {
+    font-size: 1.6rem;
 }
 
 .search-results span {
